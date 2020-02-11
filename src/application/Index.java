@@ -1,23 +1,29 @@
+/** 
+* DANIELA VILLAMAR 19086
+* 8 DE FEBRERO DEL 2020
+*/
+
+
 public class Index implements Comparable<Index> {
 
 	private int num;
 	
 	/**
-	 * @return the num
+	 * retorna num
 	 */
 	public int getNum() {
 		return num;
 	}
 
 	/**
-	 * @param num the num to set
+	 * set num
 	 */
 	public void setNum(int num) {
 		this.num = num;
 	}
 
 	/**
-	 * @param num = Numero del index
+	 * numero index
 	 */
 	public Index(int num) {
 		// TODO Auto-generated constructor stub
