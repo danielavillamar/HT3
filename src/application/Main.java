@@ -98,4 +98,46 @@ public class Main {
 			}finally{
 				impresora.close();
 			}
-
+		
+		//se imprime la lista final en un txt
+            try {
+				impresora=new PrintWriter("listaOrdenadaMS.txt", "UTF-8");
+				for (int i = 0; i < listaOrdenadaMS.length; i++){
+                impresora.println("Dato" + (i+1) +": " +listaOrdenadaMS[i]);
+                }
+			} catch (FileNotFoundException | UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally{
+				impresora.close();
+			}
+			
+		//se imprime la lista final en un txt
+            try {
+				impresora=new PrintWriter("listaOrdenadaQS.txt", "UTF-8");
+				for (int i = 0; i < listaOrdenadaQS.length; i++){
+                impresora.println("Dato" + (i+1) +": " +listaOrdenadaQS[i]);
+                }
+			} catch (FileNotFoundException | UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally{
+				impresora.close();
+			}	
+			
+		//se imprime la lista final en un txt
+            try {
+				impresora=new PrintWriter("listaOrdenadaRS.txt", "UTF-8");
+				for (int i = 0; i < listaOrdenadaRS.length; i++){
+                impresora.println("Dato" + (i+1) +": " +listaOrdenadaRS[i]);
+                }
+			} catch (FileNotFoundException | UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally{
+				impresora.close();
+			}
+		System.out.println("Lista original y final han sido impresas.");
+		leer.next();
+	}
+}
