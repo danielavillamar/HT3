@@ -15,7 +15,7 @@ public class BubbleSort
                    if(A[j+1].compareTo(A[j])<0){
                       aux=(int) A[j+1];
                       A[j+1]=A[j];
-                      A[j]=aux;
+                      A[J]=aux;
                    }
     return A;
     }
