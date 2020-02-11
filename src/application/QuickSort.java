@@ -1,3 +1,12 @@
+  
+/**
+ * DANIELA VILLAMAR 19086
+ * 7 DE FEBRERO DEL 2020
+ * Referencia: 
+ * @author Duane A. Bailey 
+ * Data Structures in Java for the Principled Programmer
+ */
+
 public class QuickSort {
      
     private static Comparable[] array;
@@ -47,3 +56,10 @@ public class QuickSort {
         if (i < higherIndex)
             quickSort(i, higherIndex);
     }
+ 
+    static void exchangeNumbers(int i, int j) {
+        int temp = (int) array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
